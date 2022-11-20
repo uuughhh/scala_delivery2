@@ -15,15 +15,15 @@ class Account(val bank: Bank, initialBalance: Double) {
       if (amount > balance.amount)
         return Right("Cannot withdraw more than amount")
       balance.amount -= amount
+      Left(())
     }
-    Left(())
   }
   def deposit(amount: Double): Either[Unit, String] = {
     balance.synchronized {
       if (amount < 0) return Right("Cannot deposit a negative amount")
       balance.amount += amount
+      Left(())
     }
-    Left(())
   }
   def getBalanceAmount: Double = {
     balance.amount
