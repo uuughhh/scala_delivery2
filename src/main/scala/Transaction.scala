@@ -13,35 +13,35 @@ class TransactionQueue {
   private val transactions: Queue[Transaction] = new Queue
   // Remove and return the first element from the queue
   def pop: Transaction = {
-    synchronized {
+    transactions.synchronized {
       transactions.dequeue()
     }
   }
 
   // Return whether the queue is empty
   def isEmpty: Boolean = {
-    synchronized {
+    transactions.synchronized {
       transactions.isEmpty
     }
   }
 
   // Add new element to the back of the queue
   def push(t: Transaction): Unit = {
-    synchronized {
+    transactions.synchronized {
       transactions.enqueue(t)
     }
   }
 
   // Return the first element from the queue without removing it
   def peek: Transaction = {
-    synchronized {
+    transactions.synchronized {
       transactions.head
     }
   }
 
   // Return an iterator to allow you to iterate over the queue
   def iterator: Iterator[Transaction] = {
-    synchronized {
+    transactions.synchronized {
       transactions.iterator
     }
   }
