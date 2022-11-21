@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(df68c578-55ca-4a93-a10d-8432be4b39e7), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to C:\Users\Brukær\Documents\GitHub\scala_delivery2\target\scala-2.12\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.16. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 14.296s.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 20 s, completed 21-Nov-2022 10:54:13[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

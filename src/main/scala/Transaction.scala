@@ -62,8 +62,6 @@ class Transaction(
   override def run: Unit = {
 
     def doTransaction() = {
-      // TODO - project task 3
-      // Extend this method to satisfy requirements.
       if (from withdraw amount isLeft){
         if (to deposit amount isLeft) {
           status = TransactionStatus.SUCCESS
@@ -85,11 +83,11 @@ class Transaction(
 
     // TODO - project task 3
     // make the code below thread safe
+
     this.synchronized {
       if (status == TransactionStatus.PENDING) {
         doTransaction
-        Thread.sleep(50) // you might want this to make more room for
-        // new transactions to be added to the queue
+        Thread.sleep(10) // Making room for new transactions to be added to the queue
       }
     }
   }

@@ -1,0 +1,50 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(3a977708-4780-4ba2-9b5d-a754f9f1bc49), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccountTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 01: Valid account withdrawal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 02: Invalid account withdrawal should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 03: Withdrawal of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 04: Valid account deposit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 05: Deposit of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 06: Correct balance amount after several withdrawals and deposits[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccountTransferTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 07: Valid transfer between accounts[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Test 08: Transfer of negative amount between accounts should fail *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  SUCCESS did not equal FAILED (AccountTests.scala:106)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Test 09: Invalid transfer between accounts due to insufficient funds should lead to transaction status FAILED and no money should be transferred between accounts *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  SUCCESS did not equal FAILED (AccountTests.scala:122)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 10: Correct balance amounts after several transfers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Test 11: Failed transactions should retry and potentially succeed with multiple allowed attempts *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.InterruptedException: sleep interrupted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Thread.sleep(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at AccountTransferTests.$anonfun$new$24(AccountTests.scala:167)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:158)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at AccountTransferTests.$anonfun$new$23(AccountTests.scala:156)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Test 12: Some transactions should be stopped with only one allowed attempt *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.InterruptedException: sleep interrupted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Thread.sleep(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at AccountTransferTests.$anonfun$new$28(AccountTests.scala:191)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:158)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at AccountTransferTests.$anonfun$new$27(AccountTests.scala:180)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: test[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: test[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

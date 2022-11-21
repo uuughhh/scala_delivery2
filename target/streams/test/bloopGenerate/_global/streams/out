@@ -1,0 +1,4 @@
+[debug] [scala_delivery2-test] Classpath dependencies List()
+[debug] [scala_delivery2-test] Dependencies from configurations List(scala_delivery2)
+[debug] Bloop wrote the configuration of project 'scala_delivery2-test' to 'C:\Users\Brukær\Documents\GitHub\scala_delivery2\.bloop\scala_delivery2-test.json'
+[success] Generated .bloop\scala_delivery2-test.json

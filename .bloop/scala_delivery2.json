@@ -1,0 +1,155 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "scala_delivery2",
+        "directory": "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2",
+        "workspaceDir": "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2",
+        "sources": [
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\src\\main\\scala",
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\src\\main\\scala-2.12",
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\src\\main\\scala-2",
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\src\\main\\java",
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\target\\scala-2.12\\src_managed\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-library.jar"
+        ],
+        "out": "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\.bloop\\scala_delivery2",
+        "classesDir": "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\.bloop\\scala_delivery2\\scala-2.12\\classes",
+        "resources": [
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\src\\main\\resources",
+            "C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2\\target\\scala-2.12\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.16",
+            "options": [
+                "-unchecked",
+                "-deprecation",
+                "-feature",
+                "-language:postfixOps"
+            ],
+            "jars": [
+                "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-library.jar",
+                "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\jline.jar",
+                "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-compiler.jar",
+                "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-reflect.jar",
+                "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-xml_2.12.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Misc\\java\\jre",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Brukær\\Documents\\GitHub\\scala_delivery2"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Brukær\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.16\\scala-library-2.12.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.16",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Brukær\\.sbt\\boot\\scala-2.12.16\\lib\\scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Brukær\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.16\\scala-library-2.12.16-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(3d1be1c0-61d6-455f-81a7-8c88ab948d9b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Brukær\Documents\GitHub\scala_delivery2\target\scala-2.12\test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccountTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 01: Valid account withdrawal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 02: Invalid account withdrawal should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 03: Withdrawal of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 04: Valid account deposit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 05: Deposit of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 06: Correct balance amount after several withdrawals and deposits[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
