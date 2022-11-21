@@ -42,7 +42,6 @@ class Bank(val allowedAttempts: Integer = 3) {
         transaction.run()
         if (transaction.status == TransactionStatus.PENDING) {
           transactionsQueue.push(transaction)
-          //processTransactions
           new Thread(new Runnable {
             def run {
             processTransactions
@@ -53,7 +52,6 @@ class Bank(val allowedAttempts: Integer = 3) {
         }
       }
     }
-
   }
 
   def addAccount(initialBalance: Double): Account = {
