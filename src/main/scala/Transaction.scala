@@ -64,17 +64,33 @@ class Transaction(
     def doTransaction() = {
       // TODO - project task 3
       // Extend this method to satisfy requirements.
-      from withdraw amount
-      to deposit amount
+      if (from withdraw amount isLeft){
+        if (to deposit amount isLeft) {
+          status = TransactionStatus.SUCCESS
+        }
+        else {
+          from deposit amount 
+          attempt += 1
+          if (attempt == allowedAttemps) {
+            status = TransactionStatus.FAILED
+          }
+        }
+      } else {
+          attempt += 1
+          if (attempt == allowedAttemps) {
+            status = TransactionStatus.FAILED
+          }
+      }
     }
 
     // TODO - project task 3
     // make the code below thread safe
-    if (status == TransactionStatus.PENDING) {
-      doTransaction
-      Thread.sleep(50) // you might want this to make more room for
-      // new transactions to be added to the queue
+    this.synchronized {
+      if (status == TransactionStatus.PENDING) {
+        doTransaction
+        Thread.sleep(50) // you might want this to make more room for
+        // new transactions to be added to the queue
+      }
     }
-
   }
 }

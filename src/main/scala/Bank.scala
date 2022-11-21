@@ -22,11 +22,10 @@ class Bank(val allowedAttempts: Integer = 3) {
     )
     transactionsQueue.push(transaction)
     new Thread(new Runnable {
-      def run() = {
+      def run {
         processTransactions
       }
-    }).run()
-
+    }).start
   }
 
   // TODO
@@ -43,7 +42,12 @@ class Bank(val allowedAttempts: Integer = 3) {
         transaction.run()
         if (transaction.status == TransactionStatus.PENDING) {
           transactionsQueue.push(transaction)
-          processTransactions
+          //processTransactions
+          new Thread(new Runnable {
+            def run {
+            processTransactions
+            }
+          }).start
         } else {
           processedTransactions.push(transaction)
         }

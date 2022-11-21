@@ -12,9 +12,8 @@ class Account(val bank: Bank, initialBalance: Double) {
   def withdraw(amount: Double): Either[Unit, String] = {
     balance.synchronized {
       if (amount < 0) return Right("Cannot withdraw negative amount")
-      if (amount > balance.amount)
-        return Right("Cannot withdraw more than amount")
-      balance.amount -= amount
+      if (amount > balance.amount) return Right ("Cannot withdraw more than amount")
+      balance.amount -= amount 
       Left(())
     }
   }
