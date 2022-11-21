@@ -21,11 +21,11 @@ class Bank(val allowedAttempts: Integer = 3) {
       allowedAttempts
     )
     transactionsQueue.push(transaction)
-    // new Thread(new Runnable {
-    //   def run() = {
-    //     processTransactions
-    //   }
-    // }).run()
+    new Thread(new Runnable {
+      def run() = {
+        processTransactions
+      }
+    }).run()
 
   }
 
