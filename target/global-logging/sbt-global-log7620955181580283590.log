@@ -1,0 +1,24 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(d650a98a-9ff2-4b0c-b12a-af32bbe30c9e), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccountTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 01: Valid account withdrawal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 02: Invalid account withdrawal should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 03: Withdrawal of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 04: Valid account deposit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 05: Deposit of negative amount should throw exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 06: Correct balance amount after several withdrawals and deposits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccountTransferTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 07: Valid transfer between accounts[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 08: Transfer of negative amount between accounts should fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 09: Invalid transfer between accounts due to insufficient funds should lead to transaction status FAILED and no money should be transferred between accounts[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 10: Correct balance amounts after several transfers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 11: Failed transactions should retry and potentially succeed with multiple allowed attempts[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test 12: Some transactions should be stopped with only one allowed attempt[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 53 seconds, 198 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 12[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 12, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 53 s, completed 21-Nov-2022 15:30:26[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -36,8 +36,7 @@ class Bank(val allowedAttempts: Integer = 3) {
   // the transaction succeeded or not
   private def processTransactions: Unit = {
     transactionsQueue.synchronized {
-      val iterator = transactionsQueue.iterator
-      while (iterator.hasNext) {
+      while (!transactionsQueue.isEmpty){
         val transaction = transactionsQueue.pop
         transaction.run()
         if (transaction.status == TransactionStatus.PENDING) {
